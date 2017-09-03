@@ -6,5 +6,3 @@ it('Note renders without crashing', () => {
   const component = shallow(<Note />);
   expect(component.exists()).toEqual(true);
 });
-
-it('')
