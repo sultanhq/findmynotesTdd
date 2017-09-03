@@ -7,4 +7,9 @@ describe('AddNote component', () => {
     const component = shallow(<AddNote />);
     expect(component.exists()).toEqual(true);
   });
+
+  it('Should have two inputs', () => {
+    const component = shallow(<AddNote />);
+    expect(component.find('.note-Input').length).toEqual(2);
+  });
 });

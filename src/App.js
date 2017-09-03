@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import AddNote from './components/addNote/';
 
 class App extends Component {
   render() {
@@ -10,9 +11,9 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Find my Notes</h2>
         </div>
-        <p className="App-intro">
-          Get note taking!
-        </p>
+        <div className="App-intro">
+          <AddNote />
+        </div>
       </div>
     );
   }
