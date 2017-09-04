@@ -9,7 +9,8 @@ it('App renders without crashing', () => {
   const component = shallow(
     <App 
       state={initialState}
-      submitNote={mockFunction}  
+      submitNote={mockFunction}
+      notes={[]}  
     />
   );
 
