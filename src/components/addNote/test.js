@@ -12,4 +12,11 @@ describe('AddNote component', () => {
     const component = shallow(<AddNote />);
     expect(component.find('.note-Input').length).toEqual(2);
   });
+
+  describe('Add note button', () => {
+    it('Should exist', () => {
+      const component = shallow(<AddNote />);
+      expect(component.find('.note-submit').length).toEqual(1);
+    });
+  });
 });
