@@ -19,13 +19,13 @@ const AddNote = ({submitNote}) => {
         <div className="note-Inputs">
           <h4>Add new note</h4>
           <div className="note-Input">
-            <input className="note-title" placeholder="Note Title"
+            <input className="input-note-title" placeholder="Note Title"
             ref={(element) => {
               inputTitle = element;}}
             />
           </div>
           <div className="note-Input">
-            <input className="note-text" placeholder="Note Message"
+            <input className="input-note-text" placeholder="Note Message"
             ref={(element) => {
               inputText = element;}}
             />

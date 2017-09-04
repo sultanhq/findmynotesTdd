@@ -11,9 +11,9 @@ describe('Notes App', () => {
   it('Should allow me to create a note', () => {
     const noteTitle = "Shopping List";
     browser.url('http://localhost:3000/');
-    browser.element('.note-title').setValue(noteTitle);
+    browser.element('.input-note-title').setValue(noteTitle);
     browser.click('.note-submit');
-    const actual = browser.element('.top-note').getText();
+    const actual = browser.element('.note-title').getText();
 
     expect(actual).to.equal(noteTitle)
   });
