@@ -1,4 +1,4 @@
-import types from '../constants';
+import types from '../constants/';
 import {reducer, initialState } from '.';
 
 describe('Reducer', () => {

@@ -1,7 +1,7 @@
 import types from '../constants/';
 
 export const initialState = {
-  notes: []
+  notes: [],
 };
 
 export const reducer = (state = initialState, action) => {
