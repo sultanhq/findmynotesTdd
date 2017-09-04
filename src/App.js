@@ -12,7 +12,7 @@ class App extends Component {
           <h2>Find my Notes</h2>
         </div>
         <div className="Add-Note">
-          <AddNote />
+          <AddNote submitNote={() =>{}} />
         </div>
       </div>
     );
