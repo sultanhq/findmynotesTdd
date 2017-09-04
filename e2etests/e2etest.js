@@ -13,7 +13,7 @@ describe('Notes App', () => {
     browser.url('http://localhost:3000/');
     browser.element('.note-title').setValue(noteTitle);
     browser.click('.note-submit');
-    const actual = browser.element('.top-note'.title).getText();
+    const actual = browser.element('.top-note').getText();
 
     expect(actual).to.equal(noteTitle)
   });
